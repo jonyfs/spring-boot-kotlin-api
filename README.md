@@ -20,6 +20,7 @@ Developed by [Jony Santos](www.linkedin.com/in/jonyfs)
 ## Continuous Integration/Deployment
 
 ### Codeship
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9cb5e2c6260a4d218af2a464122a8887)](https://www.codacy.com/app/jonyfs/spring-boot-kotlin-api?utm_source=github.com&utm_medium=referral&utm_content=jonyfs/spring-boot-kotlin-api&utm_campaign=badger)
 [![Build Status for jonyfs/spring-boot-kotlin-api](https://www.codeship.io/projects/7e42f3f0-238e-0135-ad54-762e7f012851/status?branch=master)](https://www.codeship.io/projects/222031)
 
 

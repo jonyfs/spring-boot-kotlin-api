@@ -2,7 +2,7 @@
 
 A simple [Spring Boot](http://projects.spring.io/spring-boot) api example developed with [Kotlin](https://kotlinlang.org). 
 
-Developed by [Jony Santos](www.linkedin.com/in/jonyfs)
+[Jony Santos LinkedIn](https://www.linkedin.com/in/jonyfs)
 
 ## Tools
 

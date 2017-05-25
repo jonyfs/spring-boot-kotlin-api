@@ -63,19 +63,13 @@ Developed by [Jony Santos](www.linkedin.com/in/jonyfs)
 
 [![Dependency Status](https://www.versioneye.com/user/projects/59272690f5a9a6002f636fa4/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/59272690f5a9a6002f636fa4)
 
-### Github Badges
+## Github Badges
 
 [![GitHub issues](https://img.shields.io/github/issues/jonyfs/spring-boot-kotlin-api.svg)](https://github.com/jonyfs/spring-boot-kotlin-api/issues)
 
 [![GitHub forks](https://img.shields.io/github/forks/jonyfs/spring-boot-kotlin-api.svg)](https://github.com/jonyfs/spring-boot-kotlin-api/network)
 
 [![GitHub stars](https://img.shields.io/github/stars/jonyfs/spring-boot-kotlin-api.svg)](https://github.com/jonyfs/spring-boot-kotlin-api/stargazers)
-
-
-### Social Badges
-
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/jonyfs/spring-boot-kotlin-api.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
-
 
 ## How test?
 

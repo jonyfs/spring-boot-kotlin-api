@@ -49,6 +49,9 @@ Developed by [Jony Santos](www.linkedin.com/in/jonyfs)
 ### Code Climate
 [![Code Climate](https://codeclimate.com/github/jonyfs/spring-boot-kotlin-api.svg)](https://codeclimate.com/github/jonyfs/spring-boot-kotlin-api)
 
+### Codecov
+[![codecov](https://codecov.io/gh/jonyfs/spring-boot-kotlin-api/branch/master/graph/badge.svg)](https://codecov.io/gh/jonyfs/spring-boot-kotlin-api)
+
 ## How test?
 
 	Run mvn package spring-boot:run
@@ -58,3 +61,6 @@ Developed by [Jony Santos](www.linkedin.com/in/jonyfs)
 * your local environment: http://localhost:8080
 
 * online: https://kotlinapi.herokuapp.com
+
+
+[![forthebadge](http://forthebadge.com/badges/powered-by-jony.svg)](http://forthebadge.com)

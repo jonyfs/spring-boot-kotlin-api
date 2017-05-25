@@ -80,7 +80,7 @@ class SpringBootKotlinApiApplicationTests {
         response = restTemplate.postForEntity("/users", user2, User::class.java)
 
         assertThat(response.body).isNotNull()
-        assertThat(response.body.firstName).isEqualTo(user.firstName)
+        assertThat(response.body.firstName).isEqualTo(user2.firstName)
         assertThat(response.headers["location"]).isNotNull
 
 

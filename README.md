@@ -26,4 +26,4 @@
 
 * your local environment: http://localhost:8080/
 
-* online: https://creditcardapi.herokuapp.com
+* online: https://kotlinapi.herokuapp.com

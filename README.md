@@ -44,6 +44,10 @@ Developed by [Jony Santos](www.linkedin.com/in/jonyfs)
 [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 [![Open Source Love](https://badges.frapsoft.com/os/gpl/gpl.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 
+## Code Quality
+
+### Code Climate
+[![Code Climate](https://codeclimate.com/github/jonyfs/spring-boot-kotlin-api.svg)](https://codeclimate.com/github/jonyfs/spring-boot-kotlin-api)
 
 ## How test?
 

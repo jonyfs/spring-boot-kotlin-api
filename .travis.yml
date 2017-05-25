@@ -2,8 +2,8 @@ language: java
 install: mvn install
 jdk:
   - oraclejdk8
-env:
-  global:
-    - CODECOV_TOKEN=:41a95dd9-f6c4-4af5-a297-c906f7c1b33c
+#env:
+#  global:
+#    - CODECOV_TOKEN=:41a95dd9-f6c4-4af5-a297-c906f7c1b33c
 after_success:
   - bash <(curl -s https://codecov.io/bash)

@@ -20,8 +20,8 @@ Developed by [Jony Santos](www.linkedin.com/in/jonyfs)
 ## Continuous Integration/Deployment
 
 ### Codeship
-[![Build Status for jonyfs/spring-boot-kotlin-api](https://www.codeship.io/projects/7e42f3f0-238e-0135-ad54-762e7f012851/status?branch=master)](https://www.codeship.io/projects/222031)
 
+[ ![Codeship Status for jonyfs/spring-boot-kotlin-api](https://app.codeship.com/projects/7e42f3f0-238e-0135-ad54-762e7f012851/status?branch=master)](https://app.codeship.com/projects/222031)
 
 ### TravisCI
 [![Build Status for jonyfs/spring-boot-kotlin-api](https://travis-ci.org/jonyfs/spring-boot-kotlin-api.svg?branch=master)](https://travis-ci.org/jonyfs/spring-boot-kotlin-api)

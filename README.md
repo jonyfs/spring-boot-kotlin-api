@@ -1,6 +1,8 @@
 # Spring Boot Kotlin Sample
 
-    A simple api example developed with Kotlin
+A simple [Spring Boot](http://projects.spring.io/spring-boot) api example developed with [Kotlin](https://kotlinlang.org). 
+
+Developed by [Jony Santos](www.linkedin.com/in/jonyfs)
 
 ## Tools
 
@@ -19,8 +21,6 @@
 ## How test?
 
 	Run mvn package spring-boot:run
-
-
 
 ## How access?	
 

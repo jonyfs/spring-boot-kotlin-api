@@ -68,8 +68,20 @@ class SpringBootKotlinApiApplicationTests {
         var savedUser = response.body
 
         assertThat(savedUser).isNotNull()
-        //assertThat(savedUser.id).isNotNull()
         assertThat(savedUser.firstName).isNotNull()
+
+
+        var user2 = User()
+        user2.firstName = "John"
+        user2.lastName = "Silva"
+        user2.email = "john.silva@test.com"
+        user2.password = "XPTO"
+
+        response = restTemplate.postForEntity("/users", user2, User::class.java)
+
+        assertThat(response.body).isNotNull()
+        assertThat(response.body.firstName).isEqualTo(user.firstName)
+        assertThat(response.headers["location"]).isNotNull
 
 
     }

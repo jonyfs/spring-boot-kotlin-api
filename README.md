@@ -19,9 +19,31 @@ Developed by [Jony Santos](www.linkedin.com/in/jonyfs)
 
 ## Continuous Integration/Deployment
 
+### Codeship
 [![Build Status for jonyfs/spring-boot-kotlin-api](https://www.codeship.io/projects/7e42f3f0-238e-0135-ad54-762e7f012851/status?branch=master)](https://www.codeship.io/projects/222031)
 
+
+### TravisCI
 [![Build Status for jonyfs/spring-boot-kotlin-api](https://travis-ci.org/jonyfs/spring-boot-kotlin-api.svg?branch=master)](https://travis-ci.org/jonyfs/spring-boot-kotlin-api)
+
+
+## Package Information
+
+### Semantic Versioning (via Shields.io)
+
+[![Semver](http://img.shields.io/SemVer/2.0.0.png)](http://semver.org/spec/v2.0.0.html)
+
+### Version Badge
+
+[![GitHub version](https://badge.fury.io/gh/jonyfs%2Fspring-boot-kotlin-api.svg)](https://badge.fury.io/gh/jonyfs%2Fspring-boot-kotlin-api)
+
+### Open Source Badges
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
+
+### Licence Badges
+[![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
+[![Open Source Love](https://badges.frapsoft.com/os/gpl/gpl.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
+
 
 ## How test?
 

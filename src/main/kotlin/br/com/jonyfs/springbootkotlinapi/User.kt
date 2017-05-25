@@ -1,6 +1,7 @@
 package br.com.jonyfs.springbootkotlinapi.user
 
 import br.com.jonyfs.springbootkotlinapi.role.Role
+import com.fasterxml.jackson.annotation.JsonIgnore
 import org.hibernate.validator.constraints.NotEmpty
 import java.io.Serializable
 import javax.persistence.*
@@ -25,6 +26,7 @@ class User : Serializable {
     @NotEmpty
     var email: String? = null
 
+    @JsonIgnore
     @NotEmpty
     var password: String? = null
 

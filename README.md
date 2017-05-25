@@ -37,11 +37,14 @@ Developed by [Jony Santos](www.linkedin.com/in/jonyfs)
 
 [![GitHub version](https://badge.fury.io/gh/jonyfs%2Fspring-boot-kotlin-api.svg)](https://badge.fury.io/gh/jonyfs%2Fspring-boot-kotlin-api)
 
-### Open Source Badges
+### Open Source Badge
+
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 
 ### Licence Badges
+
 [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
+
 [![Open Source Love](https://badges.frapsoft.com/os/gpl/gpl.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 
 ## Code Quality
@@ -51,6 +54,25 @@ Developed by [Jony Santos](www.linkedin.com/in/jonyfs)
 
 ### Codecov
 [![codecov](https://codecov.io/gh/jonyfs/spring-boot-kotlin-api/branch/master/graph/badge.svg)](https://codecov.io/gh/jonyfs/spring-boot-kotlin-api)
+
+### Codacy
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9cb5e2c6260a4d218af2a464122a8887)](https://www.codacy.com/app/jonyfs/spring-boot-kotlin-api?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jonyfs/spring-boot-kotlin-api&amp;utm_campaign=Badge_Grade)
+
+
+### Github Badges
+
+[![GitHub issues](https://img.shields.io/github/issues/jonyfs/spring-boot-kotlin-api.svg)](https://github.com/jonyfs/spring-boot-kotlin-api/issues)
+
+[![GitHub forks](https://img.shields.io/github/forks/jonyfs/spring-boot-kotlin-api.svg)](https://github.com/jonyfs/spring-boot-kotlin-api/network)
+
+[![GitHub stars](https://img.shields.io/github/stars/jonyfs/spring-boot-kotlin-api.svg)](https://github.com/jonyfs/spring-boot-kotlin-api/stargazers)
+
+
+### Social Badges
+
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/jonyfs/spring-boot-kotlin-api.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
+
 
 ## How test?
 
@@ -63,4 +85,3 @@ Developed by [Jony Santos](www.linkedin.com/in/jonyfs)
 * online: https://kotlinapi.herokuapp.com
 
 
-[![forthebadge](http://forthebadge.com/badges/powered-by-jony.svg)](http://forthebadge.com)

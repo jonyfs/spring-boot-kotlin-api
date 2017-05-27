@@ -15,6 +15,7 @@ class Role : Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(nullable = false, unique = true)
     var id: Long? = null
 
     @NotEmpty

@@ -14,6 +14,7 @@ class Privilege : Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(nullable = false, unique = true)
     var id: Long? = null
 
     @NotEmpty
@@ -21,4 +22,5 @@ class Privilege : Serializable {
 
     @ManyToMany(mappedBy = "privileges", cascade = arrayOf(CascadeType.ALL))
     var roles: Collection<Role>? = null
+
 }

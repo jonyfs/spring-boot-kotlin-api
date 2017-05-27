@@ -46,7 +46,7 @@ class SpringBootKotlinApiApplicationTests {
     }
 
     @Test
-    fun testIfApiLoads() {
+    fun testIfUserHasBeenSaved() {
 
         var user = User()
         user.firstName = "John"
@@ -61,6 +61,20 @@ class SpringBootKotlinApiApplicationTests {
         assertThat(user.id).isNotNull()
         assertThat(user.firstName).isNotNull()
 
+
+    }
+
+    @Test
+    fun testIfUserWasFoundByApi() {
+        var user = User()
+        user.firstName = "John"
+        user.lastName = "Anderson"
+        user.email = "john.anderson@test.com"
+        user.password = "XPTO"
+
+
+        user = userRepository.save(user)
+
         var response: ResponseEntity<User> = restTemplate.getForEntity("/users/" + user.id, User::class.java)
 
         assertThat(response).isNotNull()
@@ -71,18 +85,22 @@ class SpringBootKotlinApiApplicationTests {
         assertThat(savedUser.firstName).isNotNull()
 
 
+    }
+
+    @Test
+    fun testIfUserHasBeenSavedByApi() {
+
         var user2 = User()
         user2.firstName = "John"
         user2.lastName = "Silva"
         user2.email = "john.silva@test.com"
         user2.password = "XPTO"
 
-        response = restTemplate.postForEntity("/users", user2, User::class.java)
+        var response: ResponseEntity<User> = restTemplate.postForEntity("/users", user2, User::class.java)
 
         assertThat(response.body).isNotNull()
         assertThat(response.body.firstName).isEqualTo(user2.firstName)
         assertThat(response.headers["location"]).isNotNull
-
 
     }
 

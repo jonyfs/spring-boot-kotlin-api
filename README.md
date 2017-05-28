@@ -49,8 +49,8 @@ A simple [Spring Boot](http://projects.spring.io/spring-boot) api example develo
 
 ## Code Quality
 
-### Code Climate
-[![Code Climate](https://codeclimate.com/github/jonyfs/spring-boot-kotlin-api.svg)](https://codeclimate.com/github/jonyfs/spring-boot-kotlin-api)
+### Codebeat
+[![codebeat badge](https://codebeat.co/badges/b410b5c8-05d2-4e68-b833-8fda2a6b4cdd)](https://codebeat.co/projects/github-com-jonyfs-spring-boot-kotlin-api-master)
 
 ### Codecov
 [![codecov](https://codecov.io/gh/jonyfs/spring-boot-kotlin-api/branch/master/graph/badge.svg)](https://codecov.io/gh/jonyfs/spring-boot-kotlin-api)

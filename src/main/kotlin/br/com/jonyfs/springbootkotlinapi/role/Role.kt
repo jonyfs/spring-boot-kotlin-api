@@ -1,9 +1,8 @@
 package br.com.jonyfs.springbootkotlinapi.role
 
+import br.com.jonyfs.springbootkotlinapi.model.NamedEntity
 import br.com.jonyfs.springbootkotlinapi.privilege.Privilege
 import br.com.jonyfs.springbootkotlinapi.user.User
-import org.hibernate.validator.constraints.NotEmpty
-import java.io.Serializable
 import javax.persistence.*
 
 
@@ -11,15 +10,7 @@ import javax.persistence.*
  * Created by jony on 25/05/17.
  */
 @Entity
-class Role : Serializable {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(nullable = false, unique = true)
-    var id: Long? = null
-
-    @NotEmpty
-    var name: String? = null
+class Role : NamedEntity() {
 
     @ManyToMany(mappedBy = "roles", cascade = arrayOf(CascadeType.ALL))
     var users: Collection<User>? = null

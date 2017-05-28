@@ -1,11 +1,11 @@
 package br.com.jonyfs.springbootkotlinapi.user
 
 import br.com.jonyfs.springbootkotlinapi.group.Group
+import br.com.jonyfs.springbootkotlinapi.model.BaseEntity
 import br.com.jonyfs.springbootkotlinapi.role.Role
 import br.com.jonyfs.springbootkotlinapi.util.BCryptPasswordDeserializer
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import org.hibernate.validator.constraints.NotEmpty
-import java.io.Serializable
 import javax.persistence.*
 
 
@@ -13,12 +13,7 @@ import javax.persistence.*
  * Created by jony on 25/05/17.
  */
 @Entity
-class User : Serializable {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(nullable = false, unique = true)
-    var id: Long? = null
+class User : BaseEntity() {
 
     @NotEmpty
     var firstName: String? = null

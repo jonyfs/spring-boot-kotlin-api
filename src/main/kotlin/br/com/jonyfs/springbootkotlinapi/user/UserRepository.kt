@@ -8,5 +8,5 @@ package br.com.jonyfs.springbootkotlinapi.user
 import org.springframework.data.repository.PagingAndSortingRepository
 import org.springframework.data.rest.core.annotation.RepositoryRestResource
 
-@RepositoryRestResource
+@RepositoryRestResource(excerptProjection = UserProjection::class)
 interface UserRepository : PagingAndSortingRepository<User, Long>

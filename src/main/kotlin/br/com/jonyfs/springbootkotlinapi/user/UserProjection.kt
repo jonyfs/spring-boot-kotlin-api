@@ -10,6 +10,12 @@ import org.springframework.data.rest.core.config.Projection
 @Projection(name = "virtual", types = arrayOf(User::class))
 interface UserProjection {
 
+    fun getFirstName(): String
+
+    fun getLastName(): String
+
+    fun getEmail(): String
+
     @get:Value("#{target.firstName} #{target.lastName}")
     val fullName: String
 

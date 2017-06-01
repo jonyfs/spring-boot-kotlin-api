@@ -37,10 +37,10 @@ class AuditingConfig {
             val auth = SecurityContextHolder.getContext().authentication
             if (auth != null) {
                 if (auth.details is User) {
-                    return ofNullable<T>(auth.details as User)
+                    return ofNullable<User>(auth.details as User)
                 }
             }
-            return null
+            return Optional.empty()
         }
     }
 

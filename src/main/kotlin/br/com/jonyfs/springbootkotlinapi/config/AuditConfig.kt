@@ -10,8 +10,6 @@ import org.springframework.data.domain.AuditorAware
 import org.springframework.data.jpa.domain.support.AuditingEntityListener
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing
 import org.springframework.security.core.context.SecurityContextHolder
-import java.util.*
-import java.util.Optional.ofNullable
 
 /**
 
@@ -33,14 +31,14 @@ class AuditingConfig {
 
     class SecurityAuditor : AuditorAware<User> {
 
-        override fun getCurrentAuditor(): Optional<User>? {
+        override fun getCurrentAuditor(): User? {
             val auth = SecurityContextHolder.getContext().authentication
             if (auth != null) {
                 if (auth.details is User) {
-                    return ofNullable<User>(auth.details as User)
+                    return auth.details as User
                 }
             }
-            return Optional.empty()
+            return null
         }
     }
 

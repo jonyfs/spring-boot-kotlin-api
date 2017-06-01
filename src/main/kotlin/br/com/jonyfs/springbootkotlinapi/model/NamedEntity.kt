@@ -9,7 +9,7 @@ import javax.persistence.MappedSuperclass
  */
 
 @MappedSuperclass
-abstract class NamedEntity : AuditableEntity<Long>() {
+abstract class NamedEntity : AuditableEntity() {
 
     @NotEmpty
     var name: String? = null

@@ -9,11 +9,13 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
-import org.springframework.boot.test.json.JacksonTester
 import org.springframework.boot.test.web.client.TestRestTemplate
 import org.springframework.context.ApplicationContext
+import org.springframework.http.HttpEntity
+import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.test.context.junit4.SpringRunner
+import org.springframework.util.LinkedMultiValueMap
 import javax.annotation.Resource
 
 
@@ -35,10 +37,6 @@ class SpringBootKotlinApiApplicationTests {
 
     @Resource
     lateinit var privilegeRepository: PrivilegeRepository
-
-    @Autowired
-    private val json: JacksonTester<User>? = null
-
 
     @Test
     fun testIfContextLoads() {
@@ -79,12 +77,14 @@ class SpringBootKotlinApiApplicationTests {
 
         assertThat(response).isNotNull()
 
+        assertThat(response.statusCode).isEqualTo(HttpStatus.OK)
+
         var savedUser = response.body
 
         assertThat(savedUser).isNotNull()
         assertThat(savedUser.firstName).isNotNull()
-
-
+        assertThat(savedUser.createdDate).isNotNull()
+        assertThat(savedUser.lastModifiedDate).isNotNull()
     }
 
     @Test
@@ -96,11 +96,21 @@ class SpringBootKotlinApiApplicationTests {
         user2.email = "john.silva@test.com"
         user2.password = "XPTO"
 
+        val map = LinkedMultiValueMap<String, Any>()
+        map.add("firstName", "John")
+        map.add("lastName", "Silva")
+        map.add("email", "john.silva@test.com")
+        map.add("password", "XPTO")
+
+        val request = HttpEntity(user2)
         var response: ResponseEntity<User> = restTemplate.postForEntity("/users", user2, User::class.java)
 
         assertThat(response.body).isNotNull()
+        assertThat(response.statusCode).isEqualTo(HttpStatus.CREATED)
         assertThat(response.body.firstName).isEqualTo(user2.firstName)
         assertThat(response.headers["location"]).isNotNull
+        assertThat(response.body.createdDate).isNotNull()
+        assertThat(response.body.lastModifiedDate).isNotNull()
 
     }
 

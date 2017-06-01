@@ -108,7 +108,7 @@ class LoadData {
         userAdmin.password = "XPTO"
         userAdmin.roles = (listOf(roleAdmin))
 
-        userRepository.saveAll(listOf(user1, user2, user3, user4, userAdmin))
+        userRepository.save(listOf(user1, user2, user3, user4, userAdmin))
     }
 
 }

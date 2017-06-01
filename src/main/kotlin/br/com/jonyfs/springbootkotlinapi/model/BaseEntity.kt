@@ -8,4 +8,4 @@ import javax.persistence.MappedSuperclass
  */
 
 @MappedSuperclass
-abstract class BaseEntity : AuditableEntity<Long>()
+abstract class BaseEntity : AuditableEntity()
